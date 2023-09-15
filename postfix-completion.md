@@ -1,10 +1,18 @@
-* stringIsBlank
-* stringIsNotBlank
-* hashmap
-* hashset
-* arraylist
+# Custom postfix-completion
 
-``` xml
+- stringIsBlank
+- stringIsNotBlank
+- hashmap
+- hashset
+- arraylist
+
+# Disabled
+
+- assert
+
+# PostfixTemplates
+
+```xml
 <application>
   <component name="PostfixTemplates">
     <template id="stringIsBlank@userDefined" key=".stringIsBlank" provider="builtin.java" language-level="7" topmost="false">
