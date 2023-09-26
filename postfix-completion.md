@@ -2,6 +2,8 @@
 
 - stringIsBlank
 - stringIsNotBlank
+- collectionIsEmpty
+- collectionIsNotEmpty
 - hashmap
 - hashset
 - arraylist
@@ -20,6 +22,14 @@
         <condition id="notPrimitive" />
       </conditions>
       <template name="fakeKey" value="org.apache.commons.lang3.StringUtils.isBlank($EXPR$)" toReformat="true" toShortenFQNames="true" />
+    </template>
+    <template id="collectionIsEmpty@userDefined" key=".collectionIsEmpty" provider="builtin.java" language-level="7" topmost="false">
+      <conditions />
+      <template name="fakeKey" value="cn.hutool.core.collection.CollectionUtil.isEmpty($EXPR$);" toReformat="true" toShortenFQNames="true" />
+    </template>
+    <template id="collectionIsNotEmpty@userDefined" key=".collectionIsNotEmpty" provider="builtin.java" language-level="7" topmost="false">
+      <conditions />
+      <template name="fakeKey" value="cn.hutool.core.collection.CollectionUtil.isNotEmpty($EXPR$)" toReformat="true" toShortenFQNames="true" />
     </template>
     <template id="hashmap@userDefined" key=".hashmap" provider="builtin.java" language-level="8" topmost="true">
       <conditions />
